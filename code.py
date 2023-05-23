@@ -13,8 +13,8 @@ def frequency_analysis(cipher_text):
     return frequency
 
 # Compute frequency analysis
-frequency = frequency_analysis(cipher_text)
+char_frequency = frequency_analysis(cipher_text)
 
 # Display frequency analysis
-for char, freq in sorted(frequency.items(), key=lambda x: x[1], reverse=True):
+for char, freq in sorted(char_frequency.items(), key=lambda x: x[1], reverse=True):
     print(char, int(freq))
