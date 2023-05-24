@@ -8,7 +8,8 @@ def frequency_analysis(cipher_text):
     frequency = collections.defaultdict(int)
 
     for char in cipher_text:
-        frequency[char] += 1
+        if char.isalpha():
+            frequency[char] += 1
 
     return frequency
 
